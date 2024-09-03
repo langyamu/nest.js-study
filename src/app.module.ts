@@ -11,7 +11,7 @@ import { TmpService } from './tmp.service';
     AppService,
     {
       // provide: 'TmpService', // 类型为 string 这样控制台报错 说找不到对应 模块 (编辑器不报错)
-      provide: TmpService,
+      provide: 'Tmp', // 类型为 string （即 provide 不是一个 class）
       useClass: TmpService,
     }
   ],
